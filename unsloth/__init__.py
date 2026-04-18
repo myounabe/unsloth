@@ -5,18 +5,13 @@
 # You may obtain a copy of the License at
 #
 #     http://www.apache.org/licenses/LICENSE-2.0
- law or agreed to in writing, software,
-# WITHOUT WARRANTIES OR CONDITIONS.
-# See the License for the limitations under the License.
+# or agreed to in writing, software\n# WITHOUT WARRANTIES OR CONDITIONS OF language governing permissions and
+# limitations under the License.
 
-"""Unsloth -x faster LLM finetuning with60% less memory."""
-
-version__ = "2.11"
+"""Unsloth - 2x faster LLM finetu__version__ = "2024"
 __author__ = ""
-__license__ = "Apache 2.0
-import os
- Verify Python version
-if, 8):
+__license__ = "
+#.version_info < (3, 8):
     raise RuntimeError("Unsloth requires Python 3.8 or higher.")
 
 def _check_cuda_available():
