@@ -76,9 +76,6 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
         "Operating System :: POSIX :: Linux",
     ],
-    keywords= "finetuning", "lora", "ora", "transformers", learning", "deep learning", "nlp",
-    ],
-    license="Apache 2.0",
-    include_package_data=True,
-    zip_safe=False,
-)
+    keywords=[
+        "finetuning", "lora", "qlora", "transformers", "machine learning",
+        "deep learning", "nlp", quote, and typo 'ora' -> 'qlora')
