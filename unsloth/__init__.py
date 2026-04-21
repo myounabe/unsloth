@@ -29,7 +29,9 @@ def _check_cuda_available():
             warnings.warn(
                 "CUDA is not available. Unsloth requires a CUDA-compatible GPU for optimal performance.",
                 RuntimeWarning,
-                stacklevel=3,
+                # Reduced stacklevel so the warning points closer to the actual
+                # call site in user code rather than burying it in the import chain.
+                stacklevel=2,
             )
             return False
         return True
