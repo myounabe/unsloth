@@ -1,4 +1,4 @@
-"""Public surface of unsloth.models."""
+"""Public API for unsloth.models."""
 
 from .config import UnslothConfig
 from .loader import load_model_and_tokenizer
@@ -8,9 +8,10 @@ from .callbacks import UnslothProgressCallback, TrainingMetrics
 from .checkpoint import CheckpointMeta
 from .quantization import QuantizationConfig
 from .patching import PatchRegistry
-from .tokenizer import TokenizerConfig, prepare_tokenizer
-from .optimizer import OptimizerConfig, build_optimizer
+from .tokenizer import TokenizerConfig
+from .optimizer import OptimizerConfig
 from .scheduler import SchedulerConfig
+from .gradient import GradientConfig, clip_gradients
 
 __all__ = [
     "UnslothConfig",
@@ -24,8 +25,8 @@ __all__ = [
     "QuantizationConfig",
     "PatchRegistry",
     "TokenizerConfig",
-    "prepare_tokenizer",
     "OptimizerConfig",
-    "build_optimizer",
     "SchedulerConfig",
+    "GradientConfig",
+    "clip_gradients",
 ]
